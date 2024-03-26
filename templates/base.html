@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>hello</h1>
+<div style="display: flex; gap: 10px">
+     {% for blog_item in blog_blog %}
+        <div class="blog" style="height: 200px; background: #1e347b;border-radius: 20px;color: white;padding: 20px;font-family:  Helvetica, Arial, sans-serif">
+            <h1>{{ blog_item.title }}</h1>
+            <h2>{{ blog_item.description }}</h2>
+        </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>
